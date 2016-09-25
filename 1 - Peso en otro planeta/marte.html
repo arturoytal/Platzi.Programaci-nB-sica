@@ -6,18 +6,18 @@
   </head>
   <body>
     <h1>Tu peso en otro lugar</h1>
-    <p>Cada planeta tiene una fuerza gravitacional diferente, por lo tanto tu peso es diferente<p>
+    <p>Cada planeta tiene una fuerza gravitacional diferente, por lo tanto tu peso es diferente.<p>
 
     <script>
     var usuario = prompt("Cúal es tu peso?")
+    var peso = parseInt(usuario);
     var g_tierra = 9.8;
     var g_marte = 3.7;
     var g_jupiter = 24.8;
-    var peso = 75;
     var peso_final;
     peso_final = peso * g_marte / g_tierra;
     peso_final = parseInt(peso_final)
-    document.write(peso_final);
+    document.write("Tu peso en marte es de <strong>" + peso_final + " Kg.</strong>");
     </script>
   </body>
 </html>
