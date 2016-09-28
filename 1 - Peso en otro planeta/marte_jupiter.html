@@ -19,15 +19,18 @@
     var peso_final;
     if (planeta == 1){
       peso_final = peso * g_marte / g_tierra;
+      planeta_nombre = "Marte"
     }
     else if (planeta == 2) {
       peso_final = peso * g_jupiter/g_tierra;
+      planeta_nombre = "Júpiter"
     }
     else {
       peso_final = 1000000;
+      planeta_nombre = "Krypton"
     }
     peso_final = parseInt(peso_final);
-    document.write("Tu peso en marte es de <strong>" + peso_final + " Kg.</strong>");
+    document.write("Tu peso en <strong>" + planeta_nombre + "</strong> es de <strong>" + peso_final + " Kg.</strong>");
     </script>
   </body>
 </html>
