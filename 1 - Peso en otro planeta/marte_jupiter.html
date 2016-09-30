@@ -9,10 +9,11 @@
     <p>Cada planeta tiene una fuerza gravitacional diferente, por lo tanto tu peso es diferente.<p>
 
     <script>
-    var usuario = prompt("Cúal es tu peso?");
+    var usuario_nombre = prompt("Hola, cúal es tu nombre?");
+    var usuario_peso = prompt("Cúal es tu peso?");
     var planeta = parseInt(prompt("Elige tu planeta. \n1 - Marte. \n2 - Júpiter"));
     var planeta_nombre;
-    var peso = parseInt (usuario);
+    var peso = parseInt (usuario_peso);
     var g_tierra = 9.8;
     var g_marte = 3.7;
     var g_jupiter = 24.8;
@@ -30,7 +31,7 @@
       planeta_nombre = "Krypton"
     }
     peso_final = parseInt(peso_final);
-    document.write("Tu peso en <strong>" + planeta_nombre + "</strong> es de <strong>" + peso_final + " Kg.</strong>");
+    document.write("Hola <strong>"+ usuario_nombre + "!</strong> Tu peso en <strong>" + planeta_nombre + "</strong> es de <strong>" + peso_final + " Kg.</strong>");
     </script>
   </body>
 </html>
