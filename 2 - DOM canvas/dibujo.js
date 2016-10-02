@@ -5,15 +5,15 @@ var l = 0;
 var yi, xf;
 
 while(l < lineas) {
-  yi = 10 * l;
-  xf = 10 * (l + 1);
-  dibujarLinea("red", 0, yi, xf, 300);
+  xi = 10 * l;
+  yf = 10 * (l + 1);
+  dibujarLinea("red", xi, 300, 0, yf);
   console.log("linea " + l)
   l = l + 1
 }
 
-dibujarLinea("green", 1, 1, 1, 300)
-dibujarLinea("green", 1, 299, 299, 299)
+dibujarLinea("green", 1, 300, 1, 1)
+dibujarLinea("green", 299, 299, 1, 299)
 
 function dibujarLinea(color, xinicial, yinicial, xfinal, yfinal) {
   lienzo.beginPath();
